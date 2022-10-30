@@ -1,0 +1,93 @@
+@import 'principal';
+
+$color1: white;
+$color2: black;
+$center: center;
+
+
+    /* TITULO NOSOTROS */
+
+.titulo_nosotros {
+    text-align: center;
+    p strong {
+        background-color: $color1;
+        font-size: 60px;
+        border: 3px solid $color2;
+        border-radius: 20px;
+        padding: 5px;
+        color: $color2;
+    }
+    @media (max-width:767px) {
+        p strong {
+            font-size: 40px;
+        }
+    }
+}
+
+#textonosotros {
+    background-image: url(../imagenes/nosotros\ \(4\).jpg);
+    background-repeat: no-repeat;
+    background-position: $center;
+    background-size: 105%;
+    background-color: $color2;
+    color: $color1;
+    margin: 6vh 6vh;
+    text-align: $center;
+    padding: 5%;
+    .textonosotros__1 {
+        h3 {
+        font-size: 130%;
+        justify-content: $center;
+        align-items: $center;
+        text-align: $center;
+    }
+    }
+    .textonosotros__1 {
+        margin: 3%;
+    }
+    .textonosotros__2 {
+        margin: 3%;
+    }
+
+    .textonosotros__3 {
+        margin: 3%;
+    }
+    
+    @media (max-width:767px) {
+        & div h3 {
+            font-size: 9px;
+        }
+    }
+} 
+
+/* imagenes */
+
+.imagen {
+    display: flex;
+    align-items: $center;
+    justify-content: $center;
+    text-align: $center;
+    margin-bottom: 5%;
+    &__1 img {
+        width: 40%;
+        height: 40%;
+        border: solid $color2;
+    }
+    
+    &__2 img {
+        width: 55%;
+        height: 55%;
+        border: solid $color2;
+    }
+    
+    &__3 img {
+        width: 36%;
+        height: 39%;
+        border: solid $color2;
+    }
+}
+
+
+    /* TITULO FOOTER */
+
+@import 'footer';

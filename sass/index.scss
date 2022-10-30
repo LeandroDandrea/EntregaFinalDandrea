@@ -1,0 +1,225 @@
+
+@import 'principal';
+
+
+$color1: white;
+$color2: black;
+$center: center;
+
+.nosotros {
+    background-image: url("../imagenes/fondoo.jpg");
+    background-repeat: no-repeat;
+    background-size: 175%;
+    background-position: $center;
+    display: flex;
+    align-items: $center;
+    justify-content: space-evenly;
+    border: 1px solid $color2;
+    border-radius: 40px;
+    margin: 7vh 7vh;
+    height: 400px;
+    &__titulo {
+        margin: 20px;
+        
+    }
+    &__titulo h2 {
+        color: $color1;
+        justify-content: $center;
+        text-align: $center;
+        font-size: 60px;
+    }
+    &_til:hover {
+        transform: scale(2,2); 
+    }
+    &_til h2 a:hover {
+        color: $color1;
+        background-color: $color2; 
+    }
+    &__titulo h2 a {
+        text-decoration: none;
+        color: $color2;   
+        border: 1px solid $color2;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: $color1;
+    }
+    @media (max-width:768px) {
+        .nosotros__img {
+            display: none;
+        }
+    }
+    @media (max-width:768px) {
+        .nosotros_til {
+            flex-direction: column;
+    
+        }
+    }
+
+}
+
+.productos {
+    background-image: url(../imagenes/Productos.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: $center;
+    align-items: $center;
+    border: 1px solid $color2;
+    border-radius: 40px;
+    margin: 7vh 7vh;
+    height: 400px;
+    &__titulo {
+        background-color: $color1;
+        font-size: 40px;
+        border: 3px solid $color2;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 20px; 
+        text-align: $center;
+        justify-content: $center;
+        align-items: $center;
+        &:hover {
+            transform: scale(2,2); 
+            background-color: $color2;
+        }
+        a {
+            text-decoration: none;
+            color: $color2;
+            margin: 5px;
+        }
+        a:hover {
+            color: $color1; 
+        }
+        @media (max-width:767px) {
+            &__titulo a {
+                font-size: 20px;
+                margin: auto;
+            }
+        }
+    }
+
+    &__texto  {
+        p {
+        text-align: $center;
+        color: $color2;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        border: 2px solid $color2;
+        background-color: rgb(255, 255, 255);
+        margin-left: 50px;
+        margin-right: 50px;
+        }
+    }
+    
+    @media (max-width:767px) {
+        .productos__texto p {
+            font-size: 10px;
+            margin: auto;
+        }
+    }
+    
+    .productos__lado2 {
+        background-image: radial-gradient($color1,rgb(88, 88, 88) );
+        font-size: 25px;
+        border: 3px solid $color2;
+        border-radius: 50px;
+        margin: 20px;
+        a {
+            text-decoration: none;
+            color: $color2;
+            margin: 10px;
+        }
+    }
+
+}
+
+.ubicacion {
+    background-image: url(../imagenes/UBICACIÓN.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: $center;
+    align-items: $center;
+    margin: 7vh 7vh;
+    border: 1px solid $color2;
+    border-radius: 40px;
+    height: 400px;
+
+    &__titulo {
+        background-color: $color1;
+        border: 3px solid $color2;
+        font-size: 50px;
+        margin-top: 120px;
+        margin-bottom: 120px;  
+        padding: 5px; 
+        a {
+            text-decoration: none;
+            color: $color2;
+        }
+    }
+    &__titulo:hover {
+        transform: scale(2,2); 
+        background-color: $color2;
+    }
+    &__titulo a:hover {
+        color: $color1;   
+    }
+
+    @media (max-width:600px) {
+    &__titulo a {
+        font-size: 30px;
+    }
+    }
+    & .google iframe {
+        margin-left: 120px;
+        height: 250px;
+        width: 250px;
+    }
+    @media (max-width:800px) {
+    .google iframe {
+        display: none;
+    }
+    }
+}
+
+.contacto { 
+    background-image: radial-gradient(rgb(57, 112, 224),rgb(31, 83, 101));
+    border: 1px solid $color2;
+    border-radius: 40px;
+    margin: 7vh 7vh;
+    &__titulo {
+        padding: 20px;
+        margin: 20px; 
+        text-align: $center;
+    }
+
+    &__img a {
+        text-decoration: none;
+        background-color: $color1;
+        color: $color2;
+        font-size: 45px;
+        border: 3px solid $color2;
+        border-radius: 20px;
+        padding: 4px;
+    }
+
+    &__img a:hover {
+        color: $color1;
+        background-color: $color2;  
+    }
+    
+    &__img:hover {
+        transform: scale(2,2); 
+    }
+
+    @media (max-width:600px) {
+        &__img a {
+            font-size: 30px;
+        }
+    
+    }
+}
+
+@import 'footer';
