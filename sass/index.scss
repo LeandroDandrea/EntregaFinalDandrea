@@ -38,10 +38,10 @@ $center: center;
     &__titulo h2 a {
         text-decoration: none;
         color: $color2;   
-        border: 1px solid $color2;
+        border: 3px solid $color2;
         border-radius: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
         background-color: $color1;
     }
     @media (max-width:768px) {
@@ -53,6 +53,11 @@ $center: center;
         .nosotros_til {
             flex-direction: column;
     
+        }
+    }
+    @media (max-width:768px) {
+        .nosotros_til h2 a {
+            font-size: 35px;    
         }
     }
 
@@ -71,10 +76,7 @@ $center: center;
     margin: 7vh 7vh;
     height: 400px;
     &__titulo {
-        background-color: $color1;
         font-size: 40px;
-        border: 3px solid $color2;
-        border-radius: 20px;
         padding: 5px;
         margin: 20px; 
         text-align: $center;
@@ -87,7 +89,11 @@ $center: center;
         a {
             text-decoration: none;
             color: $color2;
-            margin: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: $color1;
+            border: 3px solid $color2;
+            border-radius: 20px;
         }
         a:hover {
             color: $color1; 
@@ -119,6 +125,11 @@ $center: center;
             margin: auto;
         }
     }
+    @media (max-width:767px) {
+        &__titulo a {
+            font-size: 35px;
+        }
+    }
     
     .productos__lado2 {
         background-image: radial-gradient($color1,rgb(88, 88, 88) );
@@ -148,8 +159,6 @@ $center: center;
     height: 400px;
 
     &__titulo {
-        background-color: $color1;
-        border: 3px solid $color2;
         font-size: 50px;
         margin-top: 120px;
         margin-bottom: 120px;  
@@ -157,6 +166,11 @@ $center: center;
         a {
             text-decoration: none;
             color: $color2;
+            background-color: $color1;
+            border: 3px solid $color2;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
     &__titulo:hover {
@@ -197,12 +211,13 @@ $center: center;
 
     &__img a {
         text-decoration: none;
-        background-color: $color1;
         color: $color2;
         font-size: 45px;
+        background-color: $color1;
         border: 3px solid $color2;
         border-radius: 20px;
-        padding: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     &__img a:hover {
